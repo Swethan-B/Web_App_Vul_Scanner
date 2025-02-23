@@ -7,6 +7,24 @@ from concurrent.futures import ThreadPoolExecutor
 import sys
 from typing import List, Dict, Set
 class WebSecurityScanner:
+    def owner_name():
+        name = """
+        ,--.   ,--.       ,--.          ,--.  ,--.             ,--.   ,--.       ,--.                              ,--.   ,--.,--.,--.  ,--.               
+        |  |   |  | ,---. |  |-.  ,---. `--',-'  '-. ,---.      \  `.'  /,--.,--.|  |,--,--,  ,---. ,--.--. ,--,--.|  |-. `--'|  |`--',-'  '-.,--. ,--.    
+        |  |.'.|  || .-. :| .-. '(  .-' ,--.'-.  .-'| .-. :      \     / |  ||  ||  ||      \| .-. :|  .--'' ,-.  || .-. ',--.|  |,--.'-.  .-' \  '  /     
+        |   ,'.   |\   --.| `-' |.-'  `)|  |  |  |  \   --.       \   /  '  ''  '|  ||  ||  |\   --.|  |   \ '-'  || `-' ||  ||  ||  |  |  |    \   '      
+        '--'   '--' `----' `---' `----' `--'  `--'   `----'        `-'    `----' `--'`--''--' `----'`--'    `--`--' `---' `--'`--'`--'  `--'  .-'  /       
+        ,---.                                                                                                                                `---'        
+        '   .-'  ,---. ,--,--.,--,--, ,--,--,  ,---. ,--.--.                                                                                               
+        `.  `-. | .--'' ,-.  ||      \|      \| .-. :|  .--'                                                                                               
+        .-'    |\ `--.\ '-'  ||  ||  ||  ||  |\   --.|  |                                                                                                  
+        `-----'  `---' `--`--'`--''--'`--''--' `----'`--'                
+    
+                                                         by Swethan
+
+        """
+        print(name)
+
     def __init__(self, target_url: str, max_depth: int = 3):
         """
         Initialize the security scanner with a target URL and maximum crawl depth.
@@ -168,6 +186,7 @@ class WebSecurityScanner:
         print()
 
 if __name__ == "__main__":
+    WebSecurityScanner.owner_name()
     if len(sys.argv) != 2:
         print("Usage: python scanner.py <target_url>")
         sys.exit(1)
